@@ -26,5 +26,5 @@ public class Tester {
 		rank.add("第五名:Amy");
 		System.out.println(rank);
 	}
-
+	System.out.println("請輸入待購物品及數量:");
 }
