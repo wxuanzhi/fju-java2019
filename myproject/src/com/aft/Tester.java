@@ -40,3 +40,29 @@ public class Tester {
 	}
 
 }
+
+/*package com.wxuan;
+
+import java.util.Scanner;
+
+public class ScoreTester {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+	try {
+		int Score = 0;
+		System.out.println("請輸入數學成績");
+		Score math = scanner.nextLine();
+		System.out.println("請輸入英文成績");
+		Score english = scanner.nextLine();
+		int average = (math.value + english.value)/2;
+		System.out.println("平均為" + average);
+	}catch(ArithmeticException e) {
+		System.out.println("數值運算錯誤");
+	}catch(NumberFormatException e) {
+		System.out.println("數字格式錯誤");
+	}if(Score > 100)
+		System.out.println("數值輸入錯誤");
+	}
+
+}*/
