@@ -1,0 +1,39 @@
+import java.io.*;
+
+public class JavaExam {
+
+    public static void main(String[] args)  {
+
+        OutputStreamWriter fos = null;
+try{
+//        OutputStreamWriter fos = new OutputStreamWriter(new FileOutputStream("result.txt"),"utf-8");
+//        try {
+//            FileWriter out = null;
+//            try {
+//                out = new FileWriter("result.txt");
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
+            fos.write("JAVA 王宣智");
+            fos.flush();
+            fos.close();
+    }catch (FileNotFoundException e){
+        e.printStackTrace();
+    } catch (IOException e) {
+        e.printStackTrace();
+    }
+}
+
+//        try{
+//            fos.write(74);
+//            fos.write(65);
+//            fos.write(86);
+//            fos.write(65);
+//            fos.write(0x738B);
+//            fos.write(0x5BA3);
+//            fos.write(0x667A);
+//            fos.flush();
+//            fos.close();
+
+    }
+
