@@ -1,0 +1,33 @@
+import java.io.*;
+
+public class Main {
+
+    public static void main(String[] args) throws Exception {
+        System.out.println("Hello World!");
+       try{
+        FileWriter fw = new FileWriter("dd.txt");
+        PrintWriter out = new PrintWriter(fw);
+        out.write("JAVA 王宣智");
+        out.flush();
+    }catch (FileNotFoundException e) {
+        e.printStackTrace();
+    }catch (IOException e) {
+        e.printStackTrace();
+
+    } finally {
+        if(out != null){
+            out.close();
+        }
+//          OutputStreamWriter fos = new OutputStreamWriter(new FileOutputStream("dd.txt"),"utf-8");
+//        fos.write(100);
+//        fos.write(66);
+//        fos.write(75);
+//        fos.write(0x738B);
+//        fos.write(75);
+//        fos.write(75);
+//        fos.flush();
+
+
+
+    }
+}
