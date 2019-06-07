@@ -9,18 +9,18 @@ public class Tester {
 		BrushTeeth bt = new BrushTeeth();
 		Thread thread = new Thread(bt);
 		thread.start();
-		
-		try {
-			breakfast.join();
-			thread.join();
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-		
-		System.out.println("Main end");
-		
+
+	try {
+		breakfast.join();
+		thread.join();
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
 	}
+	
+	
+	System.out.println("Main end");
+	
+}
 }
 

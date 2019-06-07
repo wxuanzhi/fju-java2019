@@ -1,6 +1,6 @@
 package com.HW;
 
-public class Wizard {
+public class Wizard extends Thread{
 	public void thunder() {
 		System.out.println("THUNDER START!!");
 		try {
@@ -14,7 +14,23 @@ public class Wizard {
 	public void run() {
 		thunder();
 	}
-
+	public static void main(String[] args) {
+		Wizard w1 = new Wizard();
+		w1.start();
+		try {
+			w1.join();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		Wizard w2 = new Wizard();
+		w2.start();
+		try {
+			w2.join();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 }
