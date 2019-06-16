@@ -6,7 +6,6 @@ public class Horse extends Thread {
 	}
 	@Override
 	public void run() {
-		
 		for(int i=1; i<=50; i++) {
 			StringBuilder spaces = new StringBuilder();
 			for(int j=1; j<1; j++) {
